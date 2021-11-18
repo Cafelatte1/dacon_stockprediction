@@ -1,0 +1,35 @@
+# feature_seed = 1
+# selected_features = ["date", "close", "fast_d", "trading_amount"]
+# logtrans_vec = ["close", "trading_amount"]
+
+# feature_seed = 2
+# selected_features = ["date", "close"]
+# logtrans_vec = ["close"]
+
+# feature_seed = 3
+# selected_features = ["date", "close", "fast_d", "trading_amount",
+#                      "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+# logtrans_vec = ["close", "trading_amount",
+#                 "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+
+# feature_seed = 4
+# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount",
+#                      "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+# logtrans_vec = ["close", "kospi", "trading_amount",
+#                 "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+
+# feature_seed = 5
+# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount"]
+# logtrans_vec = ["close", "kospi", "trading_amount"]
+
+# feature_seed = 6
+# selected_features = ["date", "close", "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+# logtrans_vec = ["close", "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+
+# feature_seed = 7
+# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount_mv20"]
+# logtrans_vec = ["close", "kospi", "trading_amount_mv20"]
+
+# feature_seed = 8
+# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount_mv20"]
+# logtrans_vec = []
