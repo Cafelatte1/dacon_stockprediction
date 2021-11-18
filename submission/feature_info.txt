@@ -1,35 +1,146 @@
 # feature_seed = 1
-# selected_features = ["date", "close", "fast_d", "trading_amount"]
-# logtrans_vec = ["close", "trading_amount"]
+# selected_features = None
+# logtrans_vec = []
 
+# # corr mean >= 0.2
 # feature_seed = 2
-# selected_features = ["date", "close"]
-# logtrans_vec = ["close"]
+# selected_features = ["date", "close", "close_1shift", "close_2shift", "close_3shift", "close_4shift",
+#                      "close_mv5", "close_mv10", "close_mv20", "fast_d", "fast_k", "inst_mv20",
+#                      "kospi", "kopsi_mv5", "kospi_mv10", "kospi_mv20", "obv", "obv_ema",
+#                      "trading_amount", "trading_amount_mv5", "trading_amount_mv10", "trading_amount_mv20",
+#                      "volume", "volume_mv5", "volume_mv10", "volume_mv20"]
+# logtrans_vec = []
 
+# # corr mean >= 0.4
 # feature_seed = 3
-# selected_features = ["date", "close", "fast_d", "trading_amount",
-#                      "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
-# logtrans_vec = ["close", "trading_amount",
-#                 "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+# selected_features = ["date", "close", "close_1shift", "close_2shift", "close_3shift", "close_4shift",
+#                      "close_mv5", "close_mv10", "close_mv20", "obv",
+#                      "trading_amount_mv5", "trading_amount_mv10", "trading_amount_mv20"]
+# logtrans_vec = []
 
+# # only close
 # feature_seed = 4
-# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount",
-#                      "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
-# logtrans_vec = ["close", "kospi", "trading_amount",
-#                 "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+# selected_features = ["date", "close"]
+# logtrans_vec = []
 
 # feature_seed = 5
-# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount"]
-# logtrans_vec = ["close", "kospi", "trading_amount"]
+# selected_features = ["date", "close", "close_1shift", "close_2shift", "close_3shift", "close_4shift"]
+# logtrans_vec = []
 
 # feature_seed = 6
-# selected_features = ["date", "close", "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
-# logtrans_vec = ["close", "close_1shift", "close_2shift", "close_3shift", "close_4shift", "close_5shift"]
+# selected_features = ["date", "close", "close_1shift", "close_2shift", "close_3shift", "close_4shift",
+#                      "close_mv5", "trading_amount_mv20"]
+# logtrans_vec = []
 
 # feature_seed = 7
-# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount_mv20"]
-# logtrans_vec = ["close", "kospi", "trading_amount_mv20"]
+# selected_features = ["date", "close"] + ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
 
 # feature_seed = 8
-# selected_features = ["date", "close", "fast_d", "obv", "kospi", "trading_amount_mv20"]
+# selected_features = ["date", "close"] + cat_vars_oh
+# logtrans_vec = []
+
+# feature_seed = 9
+# selected_features = ["date", "close", "close_5shift"] + ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 10
+# selected_features = ["date", "close", "close_1shift", "close_2shift", "close_5shift"] + ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 11
+# selected_features = ["date", "close", "close_5shift", "dow", "snp500", "nasdaq", "semicon_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 12
+# selected_features = ["date", "close", "close_5shift", "semicon_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 13
+# selected_features = ["date", "close", "close_5shift", "nasdaq", "semicon_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 14
+# selected_features = ["date", "close", "semicon_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 15
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 16
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "usdtocny"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 17
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "usdtoaud"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 18
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "sse_composite_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 19
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "sse_composite_index", "msci_emerging"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 20
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "sse_composite_index", "msci_emerging", "snp500"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 21
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "sse_composite_index", "msci_emerging", "nasdaq"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 22
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "usdtojpy",
+# "sse_composite_index", "msci_emerging"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 23
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw",
+#                      "sse_composite_index", "csi300_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 24
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw",
+#                      "csi300_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 25
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw",
+#                      "sse_composite_index", "us10y_tsy"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 26
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "eurtousd",
+#                      "sse_composite_index"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 27
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "eurtousd",
+#                      "sse_composite_index", "euro50"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
+# logtrans_vec = []
+
+# feature_seed = 28
+# selected_features = ["date", "close", "close_5shift", "semicon_index", "usdtokrw", "eurtousd",
+#                      "sse_composite_index", "msci_emerging"] + \
+#                     ["weekday_0", "weekday_1", "weekday_2", "weekday_3", "weekday_4"]
 # logtrans_vec = []
